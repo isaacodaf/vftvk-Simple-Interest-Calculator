@@ -1,5 +1,8 @@
-body {background-color:rgb(231, 225, 216);}
-h1 {color:green;
+body {
+    background-color:rgb(231, 225, 216);
+}
+h1 {
+    color:green;
     font-family: "Roboto", sans-serif;
     display: flex;
     display: block;
@@ -19,11 +22,12 @@ fieldset {
 }
 
 input, select {
-
     height:30px;
     font-size:14pt;
     vertical-align: middle;
-    margin-left: 45px
+    margin-left: 45px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 4px;
 }
 
 div {
@@ -40,6 +44,7 @@ label {
     background: #e7dcd5;
     color: #6f4e37;
     font-family: Arial, Helvetica, sans-serif;
+    border-radius: 4px;
 }
 
 button {
@@ -68,20 +73,19 @@ div :hover {
     border-radius: 2px;
     background: #dbd3ce;
     opacity:1;
-	transform:translateX(.1rem);
-    
+    transform:translateX(.1rem);
 }
 
 button:hover {
     color: yellow;
-	opacity:1;
-	transform:translateX(.1rem);
+    opacity:1;
+    transform:translateX(.1rem);
 }
 
 #restart:hover {
     color: rgb(87, 0, 0);
-	opacity:1;
-	transform:translateX(.1rem);
+    opacity:1;
+    transform:translateX(.1rem);
 }
 
 .range-caption {
@@ -102,7 +106,6 @@ button:hover {
     font-family: Helvetica, Arial, sans-serif;
     width: 65px;
     font-weight: bold;
-
 }
 
 #showResult {
@@ -119,12 +122,10 @@ button:hover {
     margin-left: 15px;
 }
 
-
 hr {
     width: auto;
     margin-top: 1%;
     margin-bottom: 1%;
     border: 0.5px solid black;
-    
 }
 

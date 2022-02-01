@@ -16,11 +16,11 @@ function compute()
   console.log(pAmount)
 
   if (pAmount <= 0) {         /*check if user entered a number greater than zero */
-      alert('You have made an invalid entry.\n\nPlease enter a number greater than zero.');
+      alert('You have made an invalid entry.\n\nPlease enter a positive number.');
       document.querySelector('#principal').focus();
       
     } else if (isNaN(pAmount) ) {     /*check if user entered is not a Number */
-      alert('The amount you entered is not a Number!\n\nPlease enter a number greater than zero.');
+      alert('The amount you entered is not a Number!\n\nPlease enter a positive number.');
       document.querySelector('#principal').focus();
 
     } else {     /*check if this the correct number you want to enter*/
@@ -53,10 +53,9 @@ function compute()
         // if user input is greater than zero then print message
         if (pAmount > 0) {
           // create output message
-          let response = "If you deposite <span>" + pAmount +
-          "</span>,<br> at an interest rate of <span>" + interestRate + '%' +
-          "</span>.<br><br> You will recieve an amount of <span>" + receivedAmount +
-          "</span>,<br>in the year <span>" + numYears + "<span>.";
+          let response = "If you deposite <span><mark>" + pAmount + "</mark></span>,<br> at an interest rate of <span><mark>" + interestRate + '%' +
+          "</mark></span>.<br><br> You will recieve an amount of <span><mark>" + receivedAmount +
+          "</span></mark>,<br>in the year <span><mark>" + numYears + "</mark><span>.";
       
           console.log(response)
       
