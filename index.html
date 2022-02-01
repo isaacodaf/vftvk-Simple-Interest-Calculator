@@ -1,16 +1,58 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8" />
+        <title>Simple Interest Calculator</title>
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval' http://www.google.com">
     </head>
     <body>
         <h1>Simple Interest Calculator</h1>
+       <fieldset>
+        <div>
+            <label for="principal">Amount </label>
+            <input type="text"  id="principal" name="principal" placeholder="10000">  
+        </div>
+        <br>
+        <div>
+            <label for="rate">Interest Rate</label>
+            <input type="range"  id="rate" name="rate" min="0.00" max="25.00" value="12.50" step="0.05" onchange="sliderInput(this.value);"> <!-- sliderInput() returns the range value whe the range slider is moved -->
+            
+            <input type="text" id="rangeDisplay" value=""> <!-- display the range value form the script " rangeVal + '%' " in a text box -->
+            
+        </div>  
+        <br>
+        <div>
+            <label for="years">No. of Years</label>
+            <select id="years" name="years">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+            </select>
+        </div> 
+        <br>
+        <button onclick="compute ()">Compute Interest</button> <!-- Used to create the button that when clicked computes simple interest -->
 
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
-        Interest : <span id="result"></span><br>
-
-        <button onclick="compute()">Compute</button>
+        <!-- Reloads the webpage and clear fields -->
+        <input type="button" id="restart" value="Reset" onclick="resetCalculator()"/>
+        <br>
+        <p id="showResult"><span id="displayResult"></span><br></p> <!-- used to display the response variable created in the script -->
+        <br>
+       </fieldset>
+       <br>
+       <hr>
+        <footer>
+            <span >&copy; Everyone Can Get Rich</span>
+        </footer>
     </body>
 </html>

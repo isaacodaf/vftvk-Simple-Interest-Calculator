@@ -1,4 +1,130 @@
-body {background-color:tan;}
-h1{color:green;}
+body {background-color:rgb(231, 225, 216);}
+h1 {color:green;
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    display: block;
+    line-height: 1em;
+    font-size: 80px;
+    font-weight: bold;
+    text-align: center;
+}
 
+fieldset {
+    background:#51758d;
+    border: 0px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    width: 750px;
+    margin:auto;
+}
+
+input, select {
+
+    height:30px;
+    font-size:14pt;
+    vertical-align: middle;
+    margin-left: 45px
+}
+
+div {
+    margin: 15px
+}
+
+label {
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+    width: 165px;
+    font-size: 28px;
+    padding: 5px;
+    background: #e7dcd5;
+    color: #6f4e37;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+    background: #6f4e37;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+    padding: 5px;
+    font-weight: bold;
+    margin: 15px
+}
+
+#restart {
+    background: white;
+    border-radius: 5px;
+    border-color: purple;
+    color: rgb(2, 2, 43);
+    font-size: 15px;
+    padding: 5px;
+    font-weight: bold;
+    margin: 15px
+}
+
+div :hover {
+    color: rgb(4, 83, 4);
+    border-radius: 2px;
+    background: #dbd3ce;
+    opacity:1;
+	transform:translateX(.1rem);
+    
+}
+
+button:hover {
+    color: yellow;
+	opacity:1;
+	transform:translateX(.1rem);
+}
+
+#restart:hover {
+    color: rgb(87, 0, 0);
+	opacity:1;
+	transform:translateX(.1rem);
+}
+
+.range-caption {
+    background: white;
+    color: black;
+    padding: 6px;
+    text-align: center;
+    font-weight: bold;
+    width: 5px;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+#rangeDisplay{
+    height:30px;
+    font-size:14pt;
+    vertical-align: middle;
+    margin-left: 10px;
+    font-family: Helvetica, Arial, sans-serif;
+    width: 65px;
+    font-weight: bold;
+
+}
+
+#showResult {
+    height:200px;
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+    width: 710px;
+    font-size: 28px;
+    padding: 5px;
+    background: wheat;
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 15px;
+}
+
+
+hr {
+    width: auto;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    border: 0.5px solid black;
+    
+}
 
