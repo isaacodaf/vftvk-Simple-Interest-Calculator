@@ -55,7 +55,7 @@ function compute()
           // create output message
           let response = "If you deposite <span><mark>" + pAmount + "</mark></span>,<br> at an interest rate of <span><mark>" + interestRate + '%' +
           "</mark></span>.<br><br> You will recieve an amount of <span><mark>" + interestYielded +
-          "</span></mark>,<br>in the year <span><mark>" + numYears + "</mark><span>.";
+          "</span></mark>,<br>in the year <span><mark>" + year + "</mark><span>.<br><br>And your total will be <mark><span>" + receivedAmount + "</mark></span>.";
       
           console.log(response)
       
